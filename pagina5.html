@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="painel2">      
+        <p><b>MANDA FOTINHA DO PEITO? 🥺🥺</b></p>
+
+        <img src="https://i.pinimg.com/736x/1e/a0/82/1ea0821ce93eb06ee4a89db7e8a67f82.jpg" alt="">
+        <br>
+
+        <a href="pagina6.html"><button id="sim2" > Sim! </button></a>
+        <button onmouseover="fuja()" id="nao"> Não! </button> 
+    </div> 
+
+
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+
+
+        }
+    </script>
+
+</body>
+
+</html>
